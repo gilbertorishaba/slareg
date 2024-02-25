@@ -1,0 +1,182 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+nav {
+  height: 70px;
+  background: #1a2c79;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/img1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.welcome-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.welcome-message h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.welcome-message p {
+  font-size: 1.5em;
+}
+
+.title {
+  text-align: center;
+  color: #1a2c79;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about-section {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.left-column {
+  background-color: #f2f2f2;
+}
+
+.right-column {
+  background-color: #e6e6e6;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: #400606;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.footer .columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer .column {
+  flex: 1;
+  max-width: 300px;
+  text-align: left;
+  margin: 0 20px 20px 0;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 1.5em;
+}
+
+.login-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+form {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #1a2c79;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+button.cancel {
+  background-color: #aaa;
+}
